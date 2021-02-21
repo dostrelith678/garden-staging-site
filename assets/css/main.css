@@ -4138,7 +4138,6 @@ ul.icons {
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
 		padding: 4rem 4rem 2rem 4rem ;
-		border-left: solid 2px #e2e2e2;
 	}
 
 		#footer > section:first-child {
@@ -4159,12 +4158,10 @@ ul.icons {
 
 			#footer > section.split > section {
 				padding: 3rem 4rem 1rem 4rem ;
-				border-top: solid 2px #e2e2e2;
 			}
 
 				#footer > section.split > section:first-child {
 					padding: 5rem 4rem 1rem 4rem ;
-					border-top: 0;
 				}
 
 				#footer > section.split > section:last-child {
