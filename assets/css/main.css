@@ -3690,30 +3690,6 @@ ul.icons {
 			width: 55em;
 		}
 
-		.wrapper.style2 {
-			background-color: #353849;
-		}
-
-
-		.wrapper.style3 {
-			background-color: #3d4051;
-		}
-
-
-		.wrapper.style4 {
-			background-color: #454858;
-		}
-
-		
-
-		.wrapper.style5 {
-			background-color: #4d5060;
-		}
-
-		.wrapper.style6 {
-			background-color: #555867;
-		}
-
 		.wrapper.spotlight {
 			background-color: #4c5c96;
 		}
@@ -3763,33 +3739,7 @@ ul.icons {
 			.wrapper.spotlight:nth-child(2n - 1) .image {
 				margin: 0 0 2em 3em;
 			}
-
-			.wrapper.spotlight.style2 {
-				background-color: #45558d;
-			}
-
-
-			.wrapper.spotlight.style3 {
-				background-color: #3f4e85;
-			}
-
-
-			.wrapper.spotlight.style4 {
-				background-color: #39477c;
-			}
-
-			
-			.wrapper.spotlight.style5 {
-				background-color: #324072;
-			}
-
-
-			.wrapper.spotlight.style6 {
-				background-color: #2d3a69;
-			}
-
 	
-
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
