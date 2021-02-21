@@ -56,7 +56,7 @@
 
 			window.setTimeout(function() {
 				$menu._locked = false;
-			}, 350);
+			}, 0);
 
 			return true;
 
