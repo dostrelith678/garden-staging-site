@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -4276,11 +4278,17 @@ body.is-menu-visible #menu {
 					}
 
 			#footer form label,
-			#footer 1,
 			#footer p {
 				font-size: 0.9rem;
 			}
+	}
 
+	.header-desktop {display: block;}
+	.header-mobile {display: none;}
+
+	@media screen and (max-width: 768px) {
+		.header-desktop {display: none;}
+		.header-mobile {display: block;}
 	}
 
 	@media screen and (max-width: 736px) {
