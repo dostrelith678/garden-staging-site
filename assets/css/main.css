@@ -102,7 +102,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/eden_bg.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -2610,20 +2610,12 @@ input, select, textarea {
 						padding-top: 0;
 					}
 
-					ul.actions:not(.fixed) li input[type="submit"],
-					ul.actions:not(.fixed) li input[type="reset"],
-					ul.actions:not(.fixed) li input[type="button"],
-					ul.actions:not(.fixed) li button,
-					ul.actions:not(.fixed) li .button {
-						width: 100%;
-					}
-
 						ul.actions:not(.fixed) li input[type="submit"].icon:before,
 						ul.actions:not(.fixed) li input[type="reset"].icon:before,
 						ul.actions:not(.fixed) li input[type="button"].icon:before,
 						ul.actions:not(.fixed) li button.icon:before,
 						ul.actions:not(.fixed) li .button.icon:before {
-							margin-left: -0.5rem;
+							margin-left: 0;
 						}
 
 		}
@@ -2895,7 +2887,24 @@ ul.icons {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.025);
+			box-shadow: inset 0 0 0 2px #18bfef;
+			color: #18bfef !important;
+		}
+
+		input[type="submit"].icon.solo,
+		input[type="reset"].icon.solo,
+		input[type="button"].icon.solo,
+		button.icon.solo,
+		.button.icon.solo {
+			position: relative;
+			width: 4rem;
+			height: 4rem;
+			line-height: 4rem;
+			border-radius: 4rem;
+			text-indent: 4rem;
+			overflow: hidden;
+			padding: 0;
+			white-space: nowrap;
 		}
 
 		input[type="submit"]:active,
@@ -2946,6 +2955,24 @@ ul.icons {
 			button.primary.icon:before,
 			.button.primary.icon:before {
 				color: #7985b0;
+			}
+
+			input[type="submit"].icon.solo:before,
+			input[type="reset"].icon.solo:before,
+			input[type="button"].icon.solo:before,
+			button.icon.solo:before,
+			.button.icon.solo:before {
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				width: inherit;
+				height: inherit;
+				line-height: inherit;
+				font-size: 1.25rem;
+				margin-right: 0;
+				text-align: center;
+				text-indent: 0;
 			}
 
 		input[type="submit"].fit,
@@ -3333,6 +3360,35 @@ ul.icons {
 			list-style: none;
 			padding: 0;
 		}
+		#menu ul.links:hover a {
+			color: #18bfef;
+		}
+
+		.header-desktop nav a:hover {
+			color: #18bfef !important;
+		}
+
+		.header-desktop ul.links {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-weight: 900;
+			letter-spacing: 0.075em;
+			list-style: none;
+			margin-bottom: 0;
+			padding-left: 0;
+			text-transform: uppercase;
+		}
 
 			#menu ul.links > li {
 				padding: 0;
@@ -3434,11 +3490,13 @@ body.is-menu-visible #menu {
 
 	#banner {
 		padding: 10em 0 4.75em 0 ;
+		background-color: transparent;
 	}
 
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
+			text-align: center;
 		}
 
 		#banner .logo {
@@ -3512,12 +3570,6 @@ body.is-menu-visible #menu {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto,
- cover;
-				background-position: center,
- center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3789,7 +3841,7 @@ body.is-menu-visible #menu {
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
-				margin: 4.75em 0;
+				margin: 0;
 			}
 
 				.wrapper:before, .wrapper:after {
@@ -3824,7 +3876,7 @@ body.is-menu-visible #menu {
 		@media screen and (max-width: 736px) {
 
 			.wrapper {
-				margin: 2.5em 0;
+				margin:0;
 			}
 
 				.wrapper:before, .wrapper:after {
@@ -4468,14 +4520,14 @@ body.is-menu-visible #menu {
 			font-size: 1rem;
 		}
 
-		ul.icons li a.icon:hover:before {
+		a.icon:hover:before {
 			color: #18bfef;
 		}
 	
-		ul.icons.alt li .icon:before {
+		ul.actions.alt li .icon:before {
 			box-shadow: inset 0 0 0 2px #eeeeee;
 		}
 	
-		ul.icons.alt li a.icon:hover:before {
+		a.icon:hover:before {
 			box-shadow: inset 0 0 0 2px #18bfef;
 		}
