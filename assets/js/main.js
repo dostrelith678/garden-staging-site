@@ -29,9 +29,11 @@
 		});
 
 	// Header.
-		if ($banner.length > 0
-		&&	$headerMobile.hasClass('alt')) {
-
+		if (
+			$banner.length > 0
+			&& $headerMobile.css('display') !== "none"
+			&& $headerMobile.hasClass('alt')
+		) {
 			$window.on('resize', function() { $window.trigger('scroll'); });
 
 			$banner.scrollex({
@@ -40,22 +42,22 @@
 				enter:		function() { $headerMobile.addClass('alt'); },
 				leave:		function() { $headerMobile.removeClass('alt'); }
 			});
-
 		}
 
-		if ($banner.length > 0
-			&&	$headerDesktop.hasClass('alt')) {
-	
-				$window.on('resize', function() { $window.trigger('scroll'); });
-	
-				$banner.scrollex({
-					bottom:		$headerDesktop.outerHeight(),
-					terminate:	function() { $headerDesktop.removeClass('alt'); },
-					enter:		function() { $headerDesktop.addClass('alt'); },
-					leave:		function() { $headerDesktop.removeClass('alt'); }
-				});
-	
-			}
+		if (
+			$banner.length > 0
+			&& $headerDesktop.css('display') !== "none"
+			&&	$headerDesktop.hasClass('alt')
+		) {
+			$window.on('resize', function() { $window.trigger('scroll'); });
+
+			$banner.scrollex({
+				bottom:		$headerDesktop.outerHeight(),
+				terminate:	function() { $headerDesktop.removeClass('alt'); },
+				enter:		function() { $headerDesktop.addClass('alt'); },
+				leave:		function() { $headerDesktop.removeClass('alt'); }
+			});
+		}
 
 	// Menu.
 		var $menu = $('#menu');
