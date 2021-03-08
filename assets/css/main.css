@@ -177,7 +177,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		color: #ffffff;
 		text-decoration: none;
 	}
@@ -2187,7 +2186,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 0.7em 0;
+		margin: 0 0 0.3em 0;
 		text-transform: uppercase;
 	}
 
@@ -2500,9 +2499,9 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
-				ul.alt li:first-child {
+				ul.alt li {
 					border-top: 0;
-					padding-top: 0;
+					padding-top: 1rem;
 				}
 
 	dl {
@@ -3796,7 +3795,7 @@ body.is-menu-visible #menu {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 4em 0 1em 0 ;
 			margin: 0 auto;
 			width: 55em;
 		}
@@ -3963,7 +3962,7 @@ body.is-menu-visible #menu {
 	position: relative;
 	margin: 0 auto;
 	width: calc(100% - 4rem);
-	max-width: 86rem;
+	max-width: 64rem;
 	z-index: 2;
 }
 
@@ -4200,7 +4199,7 @@ body.is-menu-visible #menu {
 		-webkit-flex-shrink: 1;
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
-		padding: 2.5rem 4rem 2rem 11rem ;
+		padding: 1rem 2rem 2rem 2rem ;
 	}
 
 		#footer > section:first-child {
@@ -4216,7 +4215,7 @@ body.is-menu-visible #menu {
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
-			padding: 2.5rem 4rem 2rem 4rem;
+			padding: 2.65rem 2rem 2rem 2rem;
 			margin-bottom: 2.5em;
 		}
 			#footer > section.split.contact > section {
@@ -4272,6 +4271,7 @@ body.is-menu-visible #menu {
 					-webkit-flex-grow: 0;
 					-ms-flex-grow: 0;
 					flex-grow: 0;
+					margin-bottom:0.1rem;
 				}
 
 				#footer > section.split.contact > section > ul {
@@ -4340,7 +4340,7 @@ body.is-menu-visible #menu {
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 4rem;
+						padding: 0rem;
 					}
 
 			#footer form label,
@@ -4384,7 +4384,7 @@ body.is-menu-visible #menu {
 				}
 
 				#footer > section.split.contact > section:last-child {
-					padding: 1rem;
+					padding: 0rem;
 				}
 
 	}
@@ -4409,7 +4409,7 @@ body.is-menu-visible #menu {
 	line-height: 1.5;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 4rem auto 8rem auto;
+	margin: 2rem auto 10rem auto;
 	width: calc(100% - 4rem);
 	max-width: 72rem;
 	z-index: 2;
@@ -4478,7 +4478,7 @@ body.is-menu-visible #menu {
 	@media screen and (max-width: 1280px) {
 
 		#copyright {
-			margin: 4rem auto;
+			
 		}
 
 	}
@@ -4504,6 +4504,7 @@ body.is-menu-visible #menu {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		text-align: center;
 	}
 
 		ul.icons li {
@@ -4555,7 +4556,7 @@ body.is-menu-visible #menu {
 	width: calc(100% - 4rem);
 	max-width: 86rem;
 	z-index: 2;
-	padding: 4rem 4rem 0.1rem 4rem;
+	padding: 4.5rem 4rem 0.1rem 4rem;
 	
 }
 
