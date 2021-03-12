@@ -102,7 +102,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/eden_bg.jpg");
+		background-image: linear-gradient(to top, rgba(32, 39, 35, 0.671), rgba(41, 51, 50, 0.582)), url("../../images/eden_bg.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -177,7 +177,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		color: #ffffff;
 		text-decoration: none;
 	}
@@ -257,9 +256,23 @@ input, select, textarea {
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 1em 0;
+		
 		text-transform: uppercase;
+		
 	}
+
+	h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		
+		text-transform: uppercase;
+		text-align: center;
+
+	}
+
+
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -273,7 +286,7 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 0px rgba(255, 255, 255, 0.125);
 		}
 
 	h2 {
@@ -2173,7 +2186,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 0.7em 0;
+		margin: 0 0 0.3em 0;
 		text-transform: uppercase;
 	}
 
@@ -2188,7 +2201,6 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		background: rgba(255, 255, 255, 0.025);
-		border-radius: 5px;
 		border: none;
 		border: solid 2px rgba(255, 255, 255, 0.125);
 		color: inherit;
@@ -2487,9 +2499,9 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
-				ul.alt li:first-child {
+				ul.alt li {
 					border-top: 0;
-					padding-top: 0;
+					padding-top: 1rem;
 				}
 
 	dl {
@@ -2863,10 +2875,8 @@ ul.icons {
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
 		background-color: transparent;
-		border-radius: 5px;
-		border: 0;
-		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-		color: #ffffff !important;
+				border: 0;
+				color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -2882,12 +2892,8 @@ ul.icons {
 		white-space: nowrap;
 	}
 
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		button:hover,
-		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
+ {
+		;
 			color: #18bfef !important;
 		}
 
@@ -2911,17 +2917,14 @@ ul.icons {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		button:active,
-		.button:active {
-			background-color: rgba(255, 255, 255, 0.075);
-		}
-
+	
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
 			margin-right: 0.5em;
-			color: rgba(255, 255, 255, 0.35);
+			color: #fafafa;
 		}
 
 		input[type="submit"].primary,
@@ -3105,12 +3108,12 @@ ul.icons {
 
 /* Header */
 
-	#header {
+	#header-mobile, #header-desktop {
 		-moz-transition: background-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(31, 37, 36, 0.95);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3121,7 +3124,9 @@ ul.icons {
 		z-index: 10000;
 	}
 
-		#header h1 {
+
+
+		#header-mobile h1, #header-desktop h1 {
 			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
@@ -3131,13 +3136,14 @@ ul.icons {
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
+			
 		}
 
-			#header h1 a {
+			#header-mobile h1 a, #header-desktop h1 a {
 				border: 0;
 			}
 
-		#header nav {
+		#header-mobile nav, #header-desktop nav {
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 0.8em;
 			font-weight: 700;
@@ -3150,18 +3156,18 @@ ul.icons {
 			top: 0.7em;
 		}
 
-			#header nav a {
+			#header-mobile nav a, #header-desktop nav a {
 				border: 0;
 				display: inline-block;
 				padding: 0 1em;
 			}
 
-				#header nav a:before {
+				#header-mobile nav a:before, #header-desktop nav a:before {
 					float: right;
 					margin-left: 0.75em;
 				}
 
-				#header nav a[href="#menu"] {
+				#header-mobile nav a, #header-desktop nav a[href="#menu"] {
 					text-decoration: none;
 					-moz-transition: background-color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out;
@@ -3172,7 +3178,7 @@ ul.icons {
 					padding: 0 1.35em;
 				}
 
-					#header nav a[href="#menu"]:before {
+					#header-mobile nav a[href="#menu"]:before, #header-desktop nav a[href="#menu"]:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						display: inline-block;
@@ -3185,54 +3191,60 @@ ul.icons {
 						font-weight: 900;
 					}
 
-					#header nav a[href="#menu"]:before {
+					#header-mobile nav a[href="#menu"]:before, #header-desktop nav a[href="#menu"]:before {
 						content: '\f0c9';
 						line-height: inherit;
 					}
 
-					#header nav a[href="#menu"]:hover {
+					#header-mobile nav a[href="#menu"]:hover, #header-desktop nav a[href="#menu"]:hover {
 						background-color: rgba(255, 255, 255, 0.025);
 					}
 
-					#header nav a[href="#menu"]:active {
+					#header-mobile nav a[href="#menu"]:active, #header-desktop nav a[href="#menu"]:active {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
-		#header.alt {
+		#header-mobile.alt, #header-desktop.alt  {
 			background-color: transparent;
 		}
 
-			#header.alt h1 {
+			#header-mobile.alt h1, #header-desktop.alt h1 {
 				opacity: 0;
 				visibility: hidden;
 			}
 
+
+
+
+	
+
 		@media screen and (max-width: 736px) {
 
-			#header {
+			#header-mobile, #header-desktop {
 				height: 2.75em;
 				line-height: 2.75em;
 			}
 
-				#header nav {
+				#header-mobile nav, #header-desktop nav {
 					top: 0;
 					right: 0;
 					height: inherit;
 					line-height: inherit;
 				}
 
-					#header nav a {
+					#header-mobile nav a, #header-desktop nav a {
 						height: inherit;
 						line-height: inherit;
 					}
 
-						#header nav a[href="#menu"] {
+						#header-mobile nav a[href="#menu"], #header-desktop nav a[href="#menu"] {
 							box-shadow: none;
 							padding: 0 1em;
 							border-radius: 0;
 						}
 
-							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
+							#header-mobile nav a[href="#menu"]:hover, #header-desktop nav a[href="#menu"]:hover, 
+							#header-mobile nav a[href="#menu"]:active, #header-desktop nav a[href="#menu"]:active {
 								background-color: inherit;
 							}
 
@@ -3240,14 +3252,14 @@ ul.icons {
 
 		@media screen and (max-width: 480px) {
 
-			#header nav a[href="#menu"] {
+			#header-mobile nav a[href="#menu"], #header-desktop nav a[href="#menu"] {
 				width: 4em;
 				white-space: nowrap;
 				text-indent: 4em;
 				position: relative;
 			}
 
-				#header nav a[href="#menu"]:before {
+				#header-mobile nav a[href="#menu"]:before, #header-desktop nav a[href="#menu"]:before {
 					width: inherit;
 					position: absolute;
 					top: 0;
@@ -3283,15 +3295,15 @@ ul.icons {
 		pointer-events: none;
 		background: rgba(36, 41, 67, 0.9);
 		box-shadow: none;
-		height: 100%;
-		left: 0;
+		height: 50%;
+		left: 25%;
 		opacity: 0;
 		overflow: hidden;
 		padding: 3em 2em;
 		position: fixed;
-		top: 0;
+		top: 25%;
 		visibility: hidden;
-		width: 100%;
+		width: 50%;
 		z-index: 10002;
 	}
 }
@@ -3489,7 +3501,7 @@ body.is-menu-visible #menu {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 10em 0 6.5em 0 ;
 		background-color: transparent;
 	}
 
@@ -3538,10 +3550,10 @@ body.is-menu-visible #menu {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
-			padding-bottom: 0.4em;
+			
 		}
 
 		#banner p {
@@ -3783,16 +3795,18 @@ body.is-menu-visible #menu {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 4em 0 1em 0 ;
 			margin: 0 auto;
 			width: 55em;
 		}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			background-color: #626c5c;
 		}
 
-
+		.wrapper.spotlight.alt {
+			background-color: #515a4c;
+		}
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -3948,7 +3962,7 @@ body.is-menu-visible #menu {
 	position: relative;
 	margin: 0 auto;
 	width: calc(100% - 4rem);
-	max-width: 86rem;
+	max-width: 64rem;
 	z-index: 2;
 }
 
@@ -3997,7 +4011,7 @@ body.is-menu-visible #menu {
 	#footer button,
 	#footer .button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #717981;
+		box-shadow: inset 0 0 0 2px #fafafa;
 		color: #ffffff !important;
 	}
 
@@ -4110,11 +4124,11 @@ body.is-menu-visible #menu {
 	}
 
 	#footer ul.icons.alt li .icon:before {
-		box-shadow: inset 0 0 0 2px #e2e2e2;
+		
 	}
 
 	#footer ul.icons.alt li a.icon:hover:before {
-		box-shadow: inset 0 0 0 2px #18bfef;
+		
 	}
 
 	#footer header.major .date:before, #footer header.major .date:after {
@@ -4185,7 +4199,7 @@ body.is-menu-visible #menu {
 		-webkit-flex-shrink: 1;
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
-		padding: 4rem 4rem 2rem 4rem ;
+		padding: 1rem 2rem 2rem 2rem ;
 	}
 
 		#footer > section:first-child {
@@ -4201,7 +4215,7 @@ body.is-menu-visible #menu {
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
-			padding: 4rem 4rem 2rem 4rem;
+			padding: 2.65rem 2rem 2rem 2rem;
 			margin-bottom: 2.5em;
 		}
 			#footer > section.split.contact > section {
@@ -4240,7 +4254,7 @@ body.is-menu-visible #menu {
 			}
 
 			#footer #social-header {
-				width: 8rem;
+				width: 9rem;
 			}
 
 
@@ -4257,6 +4271,7 @@ body.is-menu-visible #menu {
 					-webkit-flex-grow: 0;
 					-ms-flex-grow: 0;
 					flex-grow: 0;
+					margin-bottom:0.1rem;
 				}
 
 				#footer > section.split.contact > section > ul {
@@ -4298,8 +4313,7 @@ body.is-menu-visible #menu {
 		}
 
 			#footer > section {
-				border-top: solid 2px #e2e2e2;
-			}
+							}
 
 				#footer > section:first-child {
 					border-top: 0;
@@ -4326,7 +4340,7 @@ body.is-menu-visible #menu {
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 4rem;
+						padding: 0rem;
 					}
 
 			#footer form label,
@@ -4370,7 +4384,7 @@ body.is-menu-visible #menu {
 				}
 
 				#footer > section.split.contact > section:last-child {
-					padding: 1rem;
+					padding: 0rem;
 				}
 
 	}
@@ -4395,7 +4409,7 @@ body.is-menu-visible #menu {
 	line-height: 1.5;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 4rem auto 8rem auto;
+	margin: 2rem auto 10rem auto;
 	width: calc(100% - 4rem);
 	max-width: 72rem;
 	z-index: 2;
@@ -4464,7 +4478,7 @@ body.is-menu-visible #menu {
 	@media screen and (max-width: 1280px) {
 
 		#copyright {
-			margin: 4rem auto;
+			
 		}
 
 	}
@@ -4490,11 +4504,12 @@ body.is-menu-visible #menu {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		text-align: center;
 	}
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 0.5rem 0 0;
+			padding: 0 0rem 0 0;
 			vertical-align: middle;
 		}
 
@@ -4517,20 +4532,16 @@ body.is-menu-visible #menu {
 			-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			font-size: 1rem;
+			font-size: 1.4rem;
 		}
 
-		a.icon:hover:before {
-			color: #18bfef;
-		}
+				}
 	
 		ul.actions.alt li .icon:before {
 			box-shadow: inset 0 0 0 2px #eeeeee;
 		}
 	
-		a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
-		}
+		
 
 #footer-title {
 	display: -moz-flex;
@@ -4545,7 +4556,7 @@ body.is-menu-visible #menu {
 	width: calc(100% - 4rem);
 	max-width: 86rem;
 	z-index: 2;
-	padding: 4rem 4rem 2rem 4rem;
+	padding: 4.5rem 4rem 0.1rem 4rem;
 	
 }
 
