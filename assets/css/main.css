@@ -3295,15 +3295,15 @@ ul.icons {
 		pointer-events: none;
 		background: rgba(36, 41, 67, 0.9);
 		box-shadow: none;
-		height: 100%;
-		left: 0;
+		height: 50%;
+		left: 25%;
 		opacity: 0;
 		overflow: hidden;
 		padding: 3em 2em;
 		position: fixed;
-		top: 0;
+		top: 25%;
 		visibility: hidden;
-		width: 100%;
+		width: 50%;
 		z-index: 10002;
 	}
 }
