@@ -3113,7 +3113,7 @@ ul.icons {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(31, 37, 36, 0.95);
+		background-color: rgb(27 34 33 / 95%);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3122,6 +3122,7 @@ ul.icons {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		backdrop-filter: blur(5px)
 	}
 
 
@@ -3173,8 +3174,6 @@ ul.icons {
 					-webkit-transition: background-color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out;
 					transition: background-color 0.2s ease-in-out;
-					border-radius: 5px;
-					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
 					padding: 0 1.35em;
 				}
 
@@ -3206,6 +3205,7 @@ ul.icons {
 
 		#header-mobile.alt, #header-desktop.alt  {
 			background-color: transparent;
+			backdrop-filter: none;
 		}
 
 			#header-mobile.alt h1, #header-desktop.alt h1 {
@@ -3293,17 +3293,18 @@ ul.icons {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: rgb(27 34 33 / 85%);
 		box-shadow: none;
-		height: 50%;
-		left: 25%;
+		backdrop-filter: blur(5px);
+		height: 100%;
+		left: 0;
 		opacity: 0;
 		overflow: hidden;
 		padding: 3em 2em;
 		position: fixed;
-		top: 25%;
+		top: 0;
 		visibility: hidden;
-		width: 50%;
+		width: 100%;
 		z-index: 10002;
 	}
 }
@@ -3327,8 +3328,9 @@ ul.icons {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: rgba(31, 37, 36, 0.95);
 		box-shadow: none;
+		backdrop-filter: blur(5px);
 		height: 100%;
 		right: 0;
 		opacity: 0;
@@ -3795,17 +3797,18 @@ body.is-menu-visible #menu {
 		}
 
 		.wrapper .inner {
-			padding: 4em 0 1em 0 ;
+			padding: 4em 3rem 1em 3rem ;
 			margin: 0 auto;
-			width: 55em;
+			
 		}
 
 		.wrapper.spotlight {
-			background-color: #626c5c;
+			background-color: rgb(58 72 64 / 85%);
+			margin: 0 4rem;
 		}
 
 		.wrapper.spotlight.alt {
-			background-color: #515a4c;
+			background-color: rgb(42 53 46 / 85%);
 		}
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
@@ -4271,7 +4274,7 @@ body.is-menu-visible #menu {
 					-webkit-flex-grow: 0;
 					-ms-flex-grow: 0;
 					flex-grow: 0;
-					margin-bottom:0.1rem;
+					
 				}
 
 				#footer > section.split.contact > section > ul {
