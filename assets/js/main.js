@@ -8,7 +8,8 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$header = $('#header'),
+		$headerMobile = $('#header-mobile'),
+		$headerDesktop = $('#header-desktop'),
 		$banner = $('#banner');
 
 	// Breakpoints.
@@ -28,18 +29,34 @@
 		});
 
 	// Header.
-		if ($banner.length > 0
-		&&	$header.hasClass('alt')) {
-
+		if (
+			$banner.length > 0
+			&& $headerMobile.css('display') !== "none"
+			&& $headerMobile.hasClass('alt')
+		) {
 			$window.on('resize', function() { $window.trigger('scroll'); });
 
 			$banner.scrollex({
-				bottom:		$header.outerHeight(),
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); }
+				bottom:		$headerMobile.outerHeight(),
+				terminate:	function() { $headerMobile.removeClass('alt'); },
+				enter:		function() { $headerMobile.addClass('alt'); },
+				leave:		function() { $headerMobile.removeClass('alt'); }
 			});
+		}
 
+		if (
+			$banner.length > 0
+			&& $headerDesktop.css('display') !== "none"
+			&&	$headerDesktop.hasClass('alt')
+		) {
+			$window.on('resize', function() { $window.trigger('scroll'); });
+
+			$banner.scrollex({
+				bottom:		$headerDesktop.outerHeight(),
+				terminate:	function() { $headerDesktop.removeClass('alt'); },
+				enter:		function() { $headerDesktop.addClass('alt'); },
+				leave:		function() { $headerDesktop.removeClass('alt'); }
+			});
 		}
 
 	// Menu.
