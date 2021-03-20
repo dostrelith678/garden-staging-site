@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import url(href="https://fonts.gstatic.com");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
 	Solid State by HTML5 UP
@@ -278,9 +280,14 @@ form {
 	}
 
 	p {
-		margin: 0 0 2em 0;
-		text-align: center;
+		margin: 0 auto 2em auto;
+    text-align: center;
+    max-width: 50rem;
 	}
+
+
+
+
 
 	h1, h2, h3,  h5, h6 {
 		color: #fffff0;
@@ -2484,11 +2491,17 @@ form {
 
 /* Image */
 
+
+.logo{
+
+	object-fit: fill;
+}
+
 img {
 	display: block;
 	margin-left: auto;
   margin-right: auto;
- max-width:70%;
+ max-width:23%;
  margin-bottom: 2rem;
  object-fit: scale-down;
  
@@ -3070,7 +3083,7 @@ ul.icons {
 
 
 
-			@media screen and (max-width: 736px){
+			@media screen and (max-width: 608px){
 				.button.icon.solo:before {
 					position: absolute;
 					display: inline-block;
@@ -3820,7 +3833,7 @@ body.is-menu-visible #menu {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 12em 3em 14em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3830,10 +3843,10 @@ body.is-menu-visible #menu {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 773px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				
 				margin-bottom: -2.5em;
 			}
 
@@ -3846,17 +3859,51 @@ body.is-menu-visible #menu {
 					}
 
 				#banner h2 {
-					font-size: 1.093rem;
+					font-size: 2rem;
 				}
 
 				#banner p {
-					font-size: 0.7em;
+					font-size: 1em;
 				}
 
 
+				@media screen and (max-width: 608px){
 
+					#banner {
+				
+						margin-bottom: -2.5em;
+					}
+		
+						#banner .logo {
+							margin: 0 0 1em 0;
+						}
+		
+							#banner .logo .icon {
+								font-size: 1.5em;
+							}
+		
+						#banner h2 {
+							font-size: 1.093rem;
+						}
+		
+						#banner p {
+							font-size: 0.7em;
+						}
+		
+
+			}
 
 		}
+
+
+
+
+
+
+
+
+
+
 
 		body.is-preload #banner .logo {
 			-moz-transform: translateY(2rem);
@@ -4901,10 +4948,10 @@ body.is-menu-visible #menu {
 				padding-left: 0;
 			}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 736px) {
 
 		#copyright {
-			
+			font-size: 70%;
 		}
 
 	}
@@ -4977,10 +5024,10 @@ body.is-menu-visible #menu {
 	cursor: default;
 	position: relative;
 	margin: 0 auto;
-	width: calc(100% - 4rem);
+	
 	max-width: 86rem;
 	z-index: 2;
-	padding: 4.5rem 2rem 0.1rem 2rem;
+	padding: 4.5rem 1.5em 0.1rem 1.5em;
 	
 }
 
