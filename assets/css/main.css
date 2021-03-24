@@ -3884,17 +3884,6 @@ body.is-menu-visible #menu {
 			}
 
 		}
-
-
-
-
-
-
-
-
-
-
-
 		body.is-preload #banner .logo {
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
@@ -3931,7 +3920,6 @@ body.is-menu-visible #menu {
 			-webkit-transform: translateY(2rem);
 			-ms-transform: translateY(2rem);
 			transform: translateY(2rem);
-			opacity: 0;
 			visibility: hidden;
 			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
