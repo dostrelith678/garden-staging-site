@@ -1,7 +1,6 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
-@import url(href="https://fonts.gstatic.com");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
 	Solid State by HTML5 UP
@@ -2255,7 +2254,7 @@ form {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(255, 255, 255, 0.025);
+		background: none;
 		border: none;
 		border: solid 1px rgba(224, 224, 224, 0.75);
 		color: inherit;
@@ -2310,7 +2309,7 @@ form {
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 2.75em;
+		height: 2.5em;
 	}
 
 	textarea {
@@ -2508,12 +2507,6 @@ img {
   }
 
 
-
-
-  img:hover{
-
-
-  }
 
 	.image {
 		border-radius: 5px;
@@ -2984,10 +2977,7 @@ ul.icons {
 		white-space: nowrap;
 	}
 
- {
-		;
-			color: #18bfef !important;
-		}
+ 
 
 		input[type="submit"].icon.solo,
 		input[type="reset"].icon.solo,
@@ -3528,9 +3518,9 @@ ul.icons {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgb(27 34 33 / 85%);
+		background: #1b2221d9;
 		box-shadow: none;
-		backdrop-filter: blur(5px);
+		backdrop-filter: blur(15px);
 		height: 100%;
 		left: 0;
 		opacity: 0;
@@ -3538,9 +3528,9 @@ ul.icons {
 		padding: 3em 2em;
 		position: fixed;
 		top: 0;
-		visibility: hidden;
+		
 		width: 100%;
-		z-index: 10002;
+		z-index: 10005;
 	}
 }
 
@@ -3563,7 +3553,7 @@ ul.icons {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(31, 37, 36, 0.95);
+		background: #1b2221d9;
 		box-shadow: none;
 		backdrop-filter: blur(5px);
 		height: 100%;
@@ -3685,7 +3675,7 @@ ul.icons {
 		text-align: right;
 		text-indent: 8em;
 		top: 0;
-		vertical-align: middle;
+		
 		white-space: nowrap;
 		width: 8em;
 	}
@@ -3833,7 +3823,7 @@ body.is-menu-visible #menu {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 14em 3em ;
+				padding: 12em 2em 14em 2em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3863,7 +3853,7 @@ body.is-menu-visible #menu {
 				}
 
 				#banner p {
-					font-size: 1em;
+					font-size: 1.2em;
 				}
 
 
@@ -3883,11 +3873,11 @@ body.is-menu-visible #menu {
 							}
 		
 						#banner h2 {
-							font-size: 1.093rem;
+							font-size: 1.8rem;
 						}
 		
 						#banner p {
-							font-size: 0.7em;
+							font-size: 1em;
 						}
 		
 
@@ -4217,7 +4207,7 @@ body.is-menu-visible #menu {
 		}
 
 
-		}
+		
 
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
@@ -4239,7 +4229,7 @@ body.is-menu-visible #menu {
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
-				-ms-flex: 1;
+				flex: 1;
 			}
 
 				.wrapper.spotlight .image img {
@@ -4249,7 +4239,7 @@ body.is-menu-visible #menu {
 
 			.wrapper.spotlight .content {
 				width: 100%;
-				-ms-flex: 2;
+				flex: 2;
 			}
 			
 			.content1{
@@ -4382,7 +4372,7 @@ body.is-menu-visible #menu {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	color: #ffffff;
+	color: rgba(255, 255, 255, 0.8);
 	cursor: default;
 	position: relative;
 	margin: 0 auto;
@@ -4392,7 +4382,7 @@ body.is-menu-visible #menu {
 }
 
 	#footer input, #footer select, #footer textarea {
-		color: #ffffff;
+		color: rgba(255, 255, 255, 0.8);
 	}
 
 	#footer a {
@@ -4488,7 +4478,7 @@ body.is-menu-visible #menu {
 	#footer input[type="email"],
 	#footer select,
 	#footer textarea {
-		border-color: #e2e2e2;
+		
 	}
 
 		#footer input[type="text"]:focus,
@@ -4534,23 +4524,23 @@ body.is-menu-visible #menu {
 	}
 
 	#footer ::-webkit-input-placeholder {
-		color: #ffffff; !important;
+		color: #ffffff !important;
 	}
 
 	#footer :-moz-placeholder {
-		color: #ffffff; !important;
+		color: #ffffff !important;
 	}
 
 	#footer ::-moz-placeholder {
-		color: #ffffff; !important;
+		color: #ffffff !important;
 	}
 
 	#footer :-ms-input-placeholder {
-		color: #ffffff; !important;
+		color: #ffffff !important;
 	}
 
 	#footer .formerize-placeholder {
-		color: #ffffff; !important;
+		color: #ffffff !important;
 	}
 
 	#footer ul.divided li {
@@ -4613,7 +4603,7 @@ body.is-menu-visible #menu {
 	}
 
 	#footer .pagination a {
-		color: #ffffff; !important;
+		color: #ffffff !important;
 	}
 
 		#footer .pagination a:hover {
@@ -4762,8 +4752,7 @@ body.is-menu-visible #menu {
 			display: block;
 		}
 
-			#footer > section {
-							}
+		
 
 				#footer > section:first-child {
 					border-top: 0;
@@ -5006,7 +4995,7 @@ body.is-menu-visible #menu {
 			
 		}
 
-				}
+				
 	
 		ul.actions.alt li .icon:before {
 			box-shadow: inset 0 0 0 2px #eeeeee;
@@ -5020,7 +5009,7 @@ body.is-menu-visible #menu {
 	display: -ms-flex;
 	display: flex;
 	flex-direction: column;
-	color: #ffffff;
+	color: rgba(255, 255, 255, 0.8);
 	cursor: default;
 	position: relative;
 	margin: 0 auto;
@@ -5030,8 +5019,3 @@ body.is-menu-visible #menu {
 	padding: 4.5rem 1.5em 0.1rem 1.5em;
 	
 }
-
-#footer-title-header {
-	
-}
-
