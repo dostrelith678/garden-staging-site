@@ -4205,9 +4205,9 @@ body.is-menu-visible #menu {
 
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
-				display: -webkit-flex;
+				
 				display: -ms-flex;
-				display: flex;
+				display: block;
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
