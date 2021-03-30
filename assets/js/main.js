@@ -10,7 +10,7 @@
 		$body = $('body');
 		$headerMobile = $('#header-mobile'),
 		$headerDesktop = $('#header-desktop'),
-		$banner = $('#banner');
+		$banner = $('.banner');
 
 	// Breakpoints.
 		breakpoints({
