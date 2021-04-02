@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
 	Directive by HTML5 UP
@@ -26,6 +26,9 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 	scroll-behavior: smooth;
 }
+
+
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -169,7 +172,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.25em;
-		padding-bottom: 1.5rem;
+		padding-bottom: 0.5rem;
 		background: #ffffff;
 
 	}
@@ -184,6 +187,13 @@ input, select, textarea {
 		text-align: center;
 		font-family: poppins, sans-serif;
 		font-size: 1.3rem;
+
+	}
+
+
+
+	#learn-more{
+		padding-bottom: 3rem;
 
 	}
 
@@ -235,8 +245,9 @@ input, select, textarea {
 
 
 		.container.medium p {
-			margin-bottom: 2em;
+			padding-bottom: 2em;
 			background: #ffffff;
+			padding-top: 0.5rem;
 		}
 
 		#lastp{
@@ -2076,8 +2087,8 @@ input, select, textarea {
 
 				header.major.last h2 {
 					
-					margin-bottom: 1em;
-					margin-top: 4rem;
+					margin-bottom: 0.5em;
+					margin-top: 2rem;
 					border-top: solid 1px rgba(224, 224, 224, 0.75);
 					padding-top: 1rem;
 				}
@@ -2245,10 +2256,11 @@ input, select, textarea {
 
 		 img {
 			display: block;
-			
+			padding-bottom: 1.5rem;
+    		padding-top: 0.5rem;
 			margin-left: auto;
 			margin-right: auto;
-			max-width: 65%;
+			max-width: 100%;
 			background: #ffffff;
 			object-fit: scale-down;
 		}
@@ -2780,7 +2792,7 @@ input, select, textarea {
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
 		color: rgba(255, 255, 255, 0.8);
-		padding: 10em 0 20em 0;
+		padding: 13em 0 18em 0;
 		position: relative;
 		text-align: center;
 	}
@@ -3150,7 +3162,7 @@ body.is-menu-visible #menu {
 			-webkit-transition: background-color 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out;
-			background-color: #121415;
+			background-color: #222527;
 			height: 3em;
 			left: 0;
 			line-height: 3.5em;
@@ -3175,7 +3187,7 @@ body.is-menu-visible #menu {
 			text-align: left;
 			color:#ffffff;
 			top: 3.5em;
-			line-height: 3.7em;
+			line-height: 3.5em;
 			
 		}
 
@@ -3189,11 +3201,11 @@ body.is-menu-visible #menu {
 			font-weight: 600;
 			height: 3em;
 			letter-spacing: 0.18em;
-			line-height: 2.1em;
+			line-height: 3.2em;
 			position: absolute;
 			right: 0.7em;
 			text-transform: uppercase;
-			top: 0.7em;
+			top: 0;
 		}
 
 			#header-mobile nav a, #header-desktop nav a {
@@ -3377,7 +3389,7 @@ body.is-menu-visible #menu {
 		#footer:before {
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
-			height: calc(460px + 10.7em);
+			height: calc(460px + 8.8em);
 			left: 50%;
 			position: absolute;
 			top: 0;
@@ -3432,7 +3444,7 @@ body.is-menu-visible #menu {
 		}
 
 		#footer form {
-			margin: 3em 0;
+			margin: 1em 0 3em 0;
 		}
 
 		#footer .copyright {
@@ -3501,14 +3513,14 @@ body.is-menu-visible #menu {
 
 
 		#main footer.major {
-			margin-top: 3em;
+			padding-top: 3em;
 		}
 
 
 
 		#main footer.major h2{
 
-			margin-top: 4rem;
+			
 			border-top: solid 1px rgba(224, 224, 224, 0.75);
 			padding-top: 1rem;
 		}
@@ -3540,7 +3552,7 @@ body.is-menu-visible #menu {
 		/* Header */
 
 			#header {
-				padding: 8em 0 11em 0;
+				padding: 11em 0 14em 0;
 			}
 
 				#header h1 {
@@ -3611,7 +3623,7 @@ body.is-menu-visible #menu {
 				background-attachment: scroll,							scroll,							scroll;
 				background-image: url("images/top-1600.svg"), url("images/overlay.png"), url("../../images/17.jpg");
 				background-size: 1600px 230px,					auto,							cover;
-				padding: 6em 5em 12em 5em;
+				padding: 8em 5em 10em 5em;
 			}
 
 				#header:before {
@@ -3640,7 +3652,7 @@ body.is-menu-visible #menu {
 			}
 
 				#footer:before {
-					height: calc(230px + 8.7em);
+					height: calc(230px + 6.9em);
 				}
 
 				#dele h2{
@@ -3676,7 +3688,7 @@ body.is-menu-visible #menu {
 	@media screen and (min-width: 737px) and (max-width: 980px){
 
 		#footer:before {
-			height: calc(230px + 9em);
+			height: calc(230px + 7em);
 		}
 
 	}
@@ -3690,15 +3702,9 @@ body.is-menu-visible #menu {
 
 		/* Section/Article */
 
-			header.major {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
+		
 
-			footer.major {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
+		
 
 	}
 
@@ -3709,7 +3715,7 @@ body.is-menu-visible #menu {
 		/* Basic */
 
 			h2 {
-				font-size: 1em;
+				font-size: 1.2em;
 			}
 
 			h3 {
@@ -3786,7 +3792,7 @@ body.is-menu-visible #menu {
 			#header {
 				background-image: url("images/top-1280.svg"), url("images/overlay.png"), url("../../images/17.jpg");
 				background-size: 1280px 184px,						auto,							cover;
-				padding: 5em 5em 8em 5em;
+				padding: 6em 5em 6em 5em;
 			}
 
 				#header:before {
@@ -3802,7 +3808,7 @@ body.is-menu-visible #menu {
 				}
 
 				#header h1 {
-					font-size: 1.25em;
+					font-size: 1.158em;
 				}
 
 				#header p {
@@ -3819,7 +3825,7 @@ body.is-menu-visible #menu {
 			}
 
 				#footer:before {
-					height: calc(184px + 7em);
+					height: calc(184px + 5em);
 				}
 
 				#footer form {
@@ -3829,7 +3835,7 @@ body.is-menu-visible #menu {
 		/* Main */
 
 			#main {
-				padding: 2em 0 2em 0;
+				padding: 3em 0 2em 0;
 			}
 
 	}
@@ -3840,15 +3846,7 @@ body.is-menu-visible #menu {
 
 		/* Section/Article */
 
-			header.major {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-
-			footer.major {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
+			
 
 		/* Button */
 
@@ -3937,7 +3935,7 @@ body.is-menu-visible #menu {
 	@media screen and (max-width: 480px) {
 
 		#footer .copyright {
-			font-size: 0.528rem;
+			font-size: 0.7rem;
 		}
 
 	}
