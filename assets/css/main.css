@@ -3477,7 +3477,7 @@ body.is-menu-visible #menu {
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    padding: 3rem 3rem 7rem 3rem;
+    padding: 3rem 3rem 1rem 3rem;
     z-index: 2;
 		}
 
