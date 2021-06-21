@@ -43,7 +43,7 @@ section, summary, time, mark, audio, video {
 
 
 @font-face {
-	font-family: Rany-Bold;
+	font-family: Rany;
 	src: url(assets\webfonts\Rany-Bold.otf);
   }
 
@@ -196,7 +196,7 @@ input, select, textarea {
 		
 		text-transform: uppercase;
 		text-align: center;
-		font-family: Rany-Bold, montserrat, sans-serif;
+		font-family: Rany, montserrat, sans-serif;
 
 	}	
 
