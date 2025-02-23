@@ -65,6 +65,16 @@
         "uri": "https://x.com/EdenGardenPool"
       },
       {
+        "@type": "Link",
+        "label": "YouTube",
+        "uri": "https://www.youtube.com/edengardenpool"
+      },
+      {
+        "@type": "Link",
+        "label": "Website",
+        "uri": "https://garden-pool.com"
+      },
+      {
         "@type": "Identity",
         "label": "YouTube",
         "uri": "https://www.youtube.com/edengardenpool"
@@ -73,6 +83,11 @@
         "@type": "Identity",
         "label": "Website",
         "uri": "https://garden-pool.com"
+      },
+      {
+        "@type": "Identity",
+        "label": "X",
+        "uri": "https://x.com/EdenGardenPool"
       }
     ]
   }
