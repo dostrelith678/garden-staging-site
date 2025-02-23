@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "EDEN",
+    "motivations": "We are registering as DRep to actively contribute to Cardano's vision of decentralized, community-driven governance. By serving as DRep, we aim to represent our voices and those of our delegators.",
+    "objectives": "Our goal as a DRep is strengthening Cardano’s future through responsible governance. Our commitment to sustainable growth and the community’s best interests.",
+    "paymentAddress": "addr1qxmq6s6360784kf278wqsnv5ujhz9zqz2yl37nd9ralzzcgss24xcalp8snpa8u0w4566qcx9un8w74xwlt726u2nafsy56ku6",
+    "qualifications": "Our experience with Cardano stake pool operations started during the Incentivized Testnet. Garden Pool has been one of the most successful community pools since the start of Shelley and continues to be so. As part of our mission, we created many educational materials on stake pool operations, Cardano smart contracts and working with Cardano data from a developer's perspective. Over the years, we have acquired great technical knowledge about the Cardano blockchain, allowing us to make informed decisions about its future.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X",
+        "uri": "https://x.com/EdenGardenPool"
+      },
+      {
+        "@type": "Link",
+        "label": "YouTube",
+        "uri": "https://www.youtube.com/edengardenpool"
+      },
+      {
+        "@type": "Link",
+        "label": "Website",
+        "uri": "https://garden-pool.com"
+      },
+      {
+        "@type": "Identity",
+        "label": "X",
+        "uri": "https://x.com/EdenGardenPool"
+      },
+      {
+        "@type": "Identity",
+        "label": "YouTube",
+        "uri": "https://www.youtube.com/edengardenpool"
+      },
+      {
+        "@type": "Identity",
+        "label": "Website",
+        "uri": "https://garden-pool.com"
+      }
+    ]
+  }
+}
