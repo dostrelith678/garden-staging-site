@@ -51,72 +51,28 @@
       }
     }
   },
-  "authors": [],
-  "hashAlgorithm": {
-    "@value": "blake2b-256"
-  },
+  "hashAlgorithm": "blake2b-256",
   "body": {
-    "doNotList": false,
-    "givenName": {
-      "@value": "EDEN"
-    },
-    "motivations": {
-      "@value": "We are registering as a DRep to actively contribute to Cardano's vision of decentralized, community-driven governance. By serving as a DRep, we aim to represent our voices and the voices of our delegators."
-    },
-    "objectives": {
-      "@value": "Our goal as a Drep is strengthening Cardano’s future through responsible governance.  Our commitment to sustainable growth and the community’s best interests."
-    },
-    "paymentAddress": {
-      "@value": "addr1qxmq6s6360784kf278wqsnv5ujhz9zqz2yl37nd9ralzzcgss24xcalp8snpa8u0w4566qcx9un8w74xwlt726u2nafsy56ku6"
-    },
-    "qualifications": {
-      "@value": "Our experience with Cardano stake pool operations started during the Incentivized Testnet. Garden Pool has been one of the most successful community pools since the start of Shelley and continues to be so. As part of our mission, we created many educational materials on stake pool operations, Cardano smart contracts and working with Cardano data from a developer's perspective. Over the years, we have acquired great technical knowledge about the Cardano blockchain and this allows us to make informed decisions about its future."
-    },
+    "givenName": "EDEN",
+    "motivations": "We are registering as DRep to actively contribute to Cardano's vision of decentralized, community-driven governance. By serving as DRep, we aim to represent our voices and those of our delegators.",
+    "objectives": "Our goal as a Drep is strengthening Cardano’s future through responsible governance. Our commitment to sustainable growth and the community’s best interests.",
+    "paymentAddress": "addr1qxmq6s6360784kf278wqsnv5ujhz9zqz2yl37nd9ralzzcgss24xcalp8snpa8u0w4566qcx9un8w74xwlt726u2nafsy56ku6",
+    "qualifications": "Our experience with Cardano stake pool operations started during the Incentivized Testnet. Garden Pool has been one of the most successful community pools since the start of Shelley and continues to be so. As part of our mission, we created many educational materials on stake pool operations, Cardano smart contracts and working with Cardano data from a developer's perspective. Over the years, we have acquired great technical knowledge about the Cardano blockchain, allowing us to make informed decisions about its future.",
     "references": [
       {
         "@type": "Link",
-        "label": {
-          "@value": "X"
-        },
-        "uri": {
-          "@value": "https://x.com/EdenGardenPool"
-        }
-      },
-      {
-        "@type": "Link",
-        "label": {
-          "@value": "YouTube"
-        },
-        "uri": {
-          "@value": "https://www.youtube.com/edengardenpool"
-        }
-      },
-      {
-        "@type": "Link",
-        "label": {
-          "@value": "Website"
-        },
-        "uri": {
-          "@value": "https://garden-pool.com"
-        }
+        "label": "X",
+        "uri": "https://x.com/EdenGardenPool"
       },
       {
         "@type": "Identity",
-        "label": {
-          "@value": "YouTube"
-        },
-        "uri": {
-          "@value": "https://www.youtube.com/edengardenpool"
-        }
+        "label": "YouTube",
+        "uri": "https://www.youtube.com/edengardenpool"
       },
       {
         "@type": "Identity",
-        "label": {
-          "@value": "X"
-        },
-        "uri": {
-          "@value": "https://x.com/EdenGardenPool"
-        }
+        "label": "Website",
+        "uri": "https://garden-pool.com"
       }
     ]
   }
