@@ -81,13 +81,13 @@
       },
       {
         "@type": "Identity",
-        "label": "YouTube",
-        "uri": "https://www.youtube.com/edengardenpool"
+        "label": "Website",
+        "uri": "https://garden-pool.com"
       },
       {
         "@type": "Identity",
-        "label": "Website",
-        "uri": "https://garden-pool.com"
+        "label": "YouTube",
+        "uri": "https://www.youtube.com/edengardenpool"
       }
     ]
   }
