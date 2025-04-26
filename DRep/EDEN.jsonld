@@ -28,7 +28,14 @@
         },
         "paymentAddress": "CIP119:paymentAddress",
         "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
         "objectives": "CIP119:objectives",
         "motivations": "CIP119:motivations",
         "qualifications": "CIP119:qualifications",
@@ -51,9 +58,15 @@
       }
     }
   },
+  "authors": [],
   "hashAlgorithm": "blake2b-256",
   "body": {
     "givenName": "EDEN",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://raw.githubusercontent.com/dostrelith678/garden-staging-site/refs/heads/master/images/eden.png",
+      "sha256": "c030467d729b7ab958ebbfa653d7530768363fe065f2918942bc7aab66da9334"
+    },
     "motivations": "We are registering as DRep to actively contribute to Cardano's vision of decentralized, community-driven governance. By serving as DRep, we aim to represent our voices and those of our delegators.",
     "objectives": "As a DRep, we aim to strengthen Cardano’s future through responsible governance—our commitment to sustainable growth and the community’s best interests.",
     "paymentAddress": "addr1qxmq6s6360784kf278wqsnv5ujhz9zqz2yl37nd9ralzzcgss24xcalp8snpa8u0w4566qcx9un8w74xwlt726u2nafsy56ku6",
